@@ -62,10 +62,14 @@ if (contactEmail) {
       console.log('[contact-email] opening default mail client');
       window.location.href = 'mailto:' + encodeURIComponent(to);
     } else {
-      // Open Gmail compose in a new tab
+      // Open Gmail compose in a new tab; if popup is blocked, navigate current tab
       console.log('[contact-email] opening Gmail compose');
       const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to);
-      window.open(gmailUrl, '_blank');
+      const newWin = window.open(gmailUrl, '_blank');
+      if (!newWin) {
+        console.log('[contact-email] popup blocked, navigating current tab to Gmail');
+        window.location.href = gmailUrl;
+      }
     }
   });
 }
