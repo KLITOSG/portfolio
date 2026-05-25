@@ -54,12 +54,16 @@ if (contactEmail) {
   contactEmail.addEventListener('click', (e) => {
     e.preventDefault();
     const to = contactEmail.getAttribute('href').replace('mailto:', '');
+    console.log('[contact-email] click handler fired, to=', to);
     const openMailApp = confirm('Open your default mail app? Press OK to open it, Cancel to open Gmail compose.');
+    console.log('[contact-email] user chose openMailApp=', openMailApp);
     if (openMailApp) {
       // Try opening the default mail client
+      console.log('[contact-email] opening default mail client');
       window.location.href = 'mailto:' + encodeURIComponent(to);
     } else {
       // Open Gmail compose in a new tab
+      console.log('[contact-email] opening Gmail compose');
       const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to);
       window.open(gmailUrl, '_blank');
     }
