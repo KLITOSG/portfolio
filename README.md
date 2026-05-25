@@ -16,3 +16,7 @@ A personal portfolio website built with HTML, CSS, and JavaScript. It presents m
 ## Status
 
 This project is part of my entry-level frontend development portfolio.
+
+## Live Demo
+
+https://klitosg.github.io/portfolio/
