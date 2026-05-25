@@ -49,28 +49,3 @@ document.querySelectorAll("#nav-menu a").forEach(link => {
     nav.classList.remove("active");
   });
 });
-
-// Email chooser: ask the user whether to open their mail app or Gmail compose
-const contactEmail = document.getElementById('contact-email');
-if (contactEmail) {
-  contactEmail.addEventListener('click', (e) => {
-    e.preventDefault();
-    const to = contactEmail.getAttribute('href').replace('mailto:', '');
-    console.log('[contact-email] click handler fired, to=', to);
-    const openMailApp = confirm('Open your default mail app? Press OK to open it, Cancel to open Gmail compose.');
-    console.log('[contact-email] user chose openMailApp=', openMailApp);
-    if (openMailApp) {
-      console.log('[contact-email] opening default mail client');
-      window.location.href = 'mailto:' + encodeURIComponent(to);
-    } else {
-      // Open Gmail compose in a new tab; if popup is blocked, navigate current tab
-      console.log('[contact-email] opening Gmail compose');
-      const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to);
-      const newWin = window.open(gmailUrl, '_blank');
-      if (!newWin) {
-        console.log('[contact-email] popup blocked, navigating current tab to Gmail');
-        window.location.href = gmailUrl;
-      }
-    }
-  });
-}
