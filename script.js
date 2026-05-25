@@ -49,5 +49,3 @@ document.querySelectorAll("#nav-menu a").forEach(link => {
     nav.classList.remove("active");
   });
 });
-
-
