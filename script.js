@@ -48,20 +48,20 @@ document.querySelectorAll("#nav-menu a").forEach(link => {
   });
 });
 
-// Fallback: if mailto doesn't open a mail client, offer to open Gmail compose
+// Email chooser: ask the user whether to open their mail app or Gmail compose
 const contactEmail = document.getElementById('contact-email');
 if (contactEmail) {
-  contactEmail.addEventListener('click', () => {
+  contactEmail.addEventListener('click', (e) => {
+    e.preventDefault();
     const to = contactEmail.getAttribute('href').replace('mailto:', '');
-    // Let the default mailto behavior happen; after a short delay, prompt fallback
-    setTimeout(() => {
-      if (!document.hidden) {
-        const useGmail = confirm('If no mail client opened, open Gmail compose in a new tab?');
-        if (useGmail) {
-          const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to);
-          window.open(gmailUrl, '_blank');
-        }
-      }
-    }, 700);
+    const openMailApp = confirm('Open your default mail app? Press OK to open it, Cancel to open Gmail compose.');
+    if (openMailApp) {
+      // Try opening the default mail client
+      window.location.href = 'mailto:' + encodeURIComponent(to);
+    } else {
+      // Open Gmail compose in a new tab
+      const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to);
+      window.open(gmailUrl, '_blank');
+    }
   });
 }
