@@ -1,4 +1,4 @@
-const button = document.getElementById("theme-toggle");
+﻿const button = document.getElementById("theme-toggle");
 const body = document.body;
 
 if (button) {
@@ -38,9 +38,11 @@ setupReveal(".project-card");
 const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("nav-menu");
 
-hamburger.addEventListener("click", () => {
-  nav.classList.toggle("active");
-});
+if (hamburger) {
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+}
 
 document.querySelectorAll("#nav-menu a").forEach(link => {
   link.addEventListener("click", () => {
@@ -54,9 +56,11 @@ if (contactEmail) {
   contactEmail.addEventListener('click', (e) => {
     e.preventDefault();
     const to = contactEmail.getAttribute('href').replace('mailto:', '');
+    console.log('[contact-email] click handler fired, to=', to);
     const openMailApp = confirm('Open your default mail app? Press OK to open it, Cancel to open Gmail compose.');
+    console.log('[contact-email] user chose openMailApp=', openMailApp);
     if (openMailApp) {
-      // Try opening the default mail client
+      console.log('[contact-email] opening default mail client');
       window.location.href = 'mailto:' + encodeURIComponent(to);
     } else {
       // Open Gmail compose in a new tab; if popup is blocked, navigate current tab
