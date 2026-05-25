@@ -1,4 +1,4 @@
-const button = document.getElementById("theme-toggle");
+﻿const button = document.getElementById("theme-toggle");
 const body = document.body;
 
 if (button) {
@@ -38,9 +38,11 @@ setupReveal(".project-card");
 const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("nav-menu");
 
-hamburger.addEventListener("click", () => {
-  nav.classList.toggle("active");
-});
+if (hamburger) {
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+}
 
 document.querySelectorAll("#nav-menu a").forEach(link => {
   link.addEventListener("click", () => {
@@ -73,3 +75,4 @@ if (contactEmail) {
     }
   });
 }
+
