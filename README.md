@@ -6,6 +6,7 @@ A personal portfolio website built with HTML, CSS, and JavaScript. It presents m
 
 - Personal portfolio website
 - Weather app with live weather data and forecast features
+- Rock Paper Scissors game with saved score tracking
 
 ## Tech Stack
 
