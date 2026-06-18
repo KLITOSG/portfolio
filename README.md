@@ -27,7 +27,7 @@ Technologies used:
 
 ### Todo List App
 
-A responsive task management application designed to help users create todo items with due dates and remove completed tasks through a clean, centered browser interface. The project demonstrates practical DOM manipulation, form handling, and responsive layout techniques using vanilla JavaScript.
+A responsive task management application designed to help users create todo items with due dates and remove completed tasks through a clean, centered browser interface. The project demonstrates practical DOM manipulation, form handling, and responsive layout techniques using JavaScript.
 
 Technologies used:
 - HTML5 for semantic structure and form controls
@@ -49,3 +49,4 @@ This project is part of my entry-level frontend development portfolio and demons
 ## Live Demo
 
 https://klitosg.github.io/portfolio/
+
