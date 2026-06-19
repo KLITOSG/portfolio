@@ -27,12 +27,13 @@ Technologies used:
 
 ### Todo List App
 
-A responsive task management application designed to help users create todo items with due dates and remove completed tasks through a clean, centered browser interface. The project demonstrates practical DOM manipulation, form handling, and responsive layout techniques using JavaScript.
+A responsive task management application designed to help users create todo items with due dates, remove completed tasks, and keep their list available after page refresh through a clean, centered browser interface. The project demonstrates practical DOM manipulation, form handling, browser storage, and responsive layout techniques using JavaScript.
 
 Technologies used:
 - HTML5 for semantic structure and form controls
 - CSS3 for centered layout, responsive design, and visual styling
 - JavaScript for todo list logic, DOM rendering, and user interaction
+- localStorage for preserving todo items between browser sessions
 
 ## Main Technologies
 
