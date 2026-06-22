@@ -21,8 +21,7 @@ An interactive browser game that allows the user to play against a randomized co
 Technologies used:
 - HTML5 for semantic content and controls
 - CSS3 for responsive styling, layout, and visual states
-- JavaScript for game logic, score handling, and random move generation
-- jQuery for event handling and dynamic page updates
+- JavaScript for game logic, DOM updates, event handling, score management, and random move generation
 - localStorage for saving the game score between sessions
 
 ### Todo List App
