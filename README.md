@@ -16,12 +16,12 @@ Technologies used:
 
 ### Rock Paper Scissors
 
-An interactive browser game that allows the user to play against a randomized computer opponent. The project includes image-based move buttons, score tracking, persistent data storage, and a responsive layout for desktop and mobile screens.
+An interactive browser game that allows the user to play manually against a randomized computer opponent or activate Auto Play for continuous rounds. The project includes image-based move buttons, persistent score tracking, and a responsive layout for desktop and mobile screens.
 
 Technologies used:
 - HTML5 for semantic content and controls
 - CSS3 for responsive styling, layout, and visual states
-- JavaScript for game logic, DOM updates, event handling, score management, and random move generation
+- JavaScript for game logic, DOM updates, event handling, automated rounds, score management, and random move generation
 - localStorage for saving the game score between sessions
 
 ### Todo List App
