@@ -34,19 +34,32 @@ Technologies used:
 - JavaScript for todo list logic, DOM rendering, and user interaction
 - localStorage for preserving todo items between browser sessions
 
+### Remote Job Finder
+
+A Python-powered web app that aggregates remote job listings from multiple sources and matches them against a user's saved preferences. It includes a dashboard, private Saved and Applied job tracking, optional push and email alerts, scheduled job checks, and a progressive web app setup.
+
+Technologies used:
+- Python for the web app, job source integrations, and background worker
+- HTML, CSS, and JavaScript for the dashboard and progressive web app
+- Supabase Auth and Postgres for authentication and cloud data
+- GitHub Actions for scheduled job checks
+- Render for hosting
+
+[View Remote Job Finder on GitHub](https://github.com/KLITOSG/remote-job-finder) · [Deployment guide](https://github.com/KLITOSG/remote-job-finder/blob/main/DEPLOYMENT.md)
+
 ## Main Technologies
 
 - HTML5
 - CSS3
 - JavaScript
 - jQuery
+- Python
 - Git and GitHub
 
 ## Status
 
-This project is part of my entry-level frontend development portfolio and demonstrates practical experience with responsive design, DOM manipulation, user interaction, and browser-based data persistence.
+This portfolio showcases projects that demonstrate responsive design, frontend development, user interaction, browser-based data persistence, and full-stack application work.
 
 ## Live Demo
 
 https://klitosg.github.io/portfolio/
-
