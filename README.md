@@ -4,6 +4,17 @@ A responsive personal portfolio website created to present my profile, education
 
 ## Featured Projects
 
+### Amazon Project
+
+An interactive Amazon-style storefront with product browsing, a shopping cart, checkout, order history, and package tracking.
+
+Technologies used:
+- HTML5 and CSS3 for the storefront interface
+- JavaScript for product, cart, checkout, order, and tracking interactions
+- JSON for product data
+
+[Live Demo](https://klitosg.github.io/portfolio/amazon-demo/amazon.html) · [View on GitHub](https://github.com/KLITOSG/Amazon-Project)
+
 ### Calculator App
 
 A responsive calculator application designed with a centered user interface and mobile-friendly controls. The project uses JavaScript and jQuery to update the calculator display, handle user input, and store the latest calculation with `localStorage`.
@@ -45,7 +56,7 @@ Technologies used:
 - GitHub Actions for scheduled job checks
 - Render for hosting
 
-[View Remote Job Finder on GitHub](https://github.com/KLITOSG/remote-job-finder) · [Deployment guide](https://github.com/KLITOSG/remote-job-finder/blob/main/DEPLOYMENT.md)
+[Live Demo](https://remote-job-finder-w20c.onrender.com/) · [View on GitHub](https://github.com/KLITOSG/remote-job-finder) · [Deployment guide](https://github.com/KLITOSG/remote-job-finder/blob/main/DEPLOYMENT.md)
 
 ## Main Technologies
 
