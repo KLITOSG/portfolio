@@ -4,6 +4,17 @@ A responsive personal portfolio website created to present my profile, education
 
 ## Featured Projects
 
+### Amazon Project
+
+An interactive Amazon-style storefront with product browsing, a shopping cart, checkout, order history, and package tracking.
+
+Technologies used:
+- HTML5 and CSS3 for the storefront interface
+- JavaScript for product, cart, checkout, order, and tracking interactions
+- JSON for product data
+
+[Live Demo](https://klitosg.github.io/portfolio/amazon-demo/amazon.html) · [View on GitHub](https://github.com/KLITOSG/Amazon-Project)
+
 ### Calculator App
 
 A responsive calculator application designed with a centered user interface and mobile-friendly controls. The project uses JavaScript and jQuery to update the calculator display, handle user input, and store the latest calculation with `localStorage`.
@@ -34,19 +45,32 @@ Technologies used:
 - JavaScript for todo list logic, DOM rendering, and user interaction
 - localStorage for preserving todo items between browser sessions
 
+### Remote Job Finder
+
+A Python-powered web app that aggregates remote job listings from multiple sources and matches them against a user's saved preferences. It includes a dashboard, private Saved and Applied job tracking, optional push and email alerts, scheduled job checks, and a progressive web app setup.
+
+Technologies used:
+- Python for the web app, job source integrations, and background worker
+- HTML, CSS, and JavaScript for the dashboard and progressive web app
+- Supabase Auth and Postgres for authentication and cloud data
+- GitHub Actions for scheduled job checks
+- Render for hosting
+
+[Live Demo](https://remote-job-finder-w20c.onrender.com/) · [View on GitHub](https://github.com/KLITOSG/remote-job-finder) · [Deployment guide](https://github.com/KLITOSG/remote-job-finder/blob/main/DEPLOYMENT.md)
+
 ## Main Technologies
 
 - HTML5
 - CSS3
 - JavaScript
 - jQuery
+- Python
 - Git and GitHub
 
 ## Status
 
-This project is part of my entry-level frontend development portfolio and demonstrates practical experience with responsive design, DOM manipulation, user interaction, and browser-based data persistence.
+This portfolio showcases projects that demonstrate responsive design, frontend development, user interaction, browser-based data persistence, and full-stack application work.
 
 ## Live Demo
 
 https://klitosg.github.io/portfolio/
-
